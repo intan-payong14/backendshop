@@ -5,7 +5,7 @@ define('DB_PASS', 'hJHRdMpBByXMiBbMhuWNOmjKLYnWijfu');
 define('DB_NAME', 'railway'); 
 define('DB_PORT', 42188);
 
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT);
 
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
